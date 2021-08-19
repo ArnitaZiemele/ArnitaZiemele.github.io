@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="ie8">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Sparkle Heart</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Mobile Specifc Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Stylessheets -->
+		<link rel="stylesheet" href="assets/css/style.css" />
+
+		<!-- Favicons -->
+		<link rel="facebook-icon" href="assets/img/icons/facebook.png">
+		<link rel="facebook-icon" href="assets/img/icons/instagram.png">
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+	
+		<!-- JavaScript -->
+		<script src="assets/js/theme.js"></script>
+		
+		<!-- Content-->
+		<header class="site-header">
+			<a class="site-logo" href=""><img src="assets/img/BlackLogo.png" alt="No photo found"></a>
+			<nav class="nav-main" id="topNav">
+				<ul>
+					<li class="menu-item"><a href="">Ideja</a></li>
+					<li class="menu-item"><a href="">Piesaki Sapni</a></li>
+					<li class="menu-item"><a href="">Uzņēmējiem</a></li>
+					<li class="menu-item"><a href="">Sapņu banka</a></li>
+					<li class="menu-item"><a href="">Sapņus atbalsta</a></li>
+					<li class="menu-item"><a href="">99 Iedvesmas stāsti</a></li>
+					<a href="javascript:void(0);" class="menu-icon" onclick="menuPopUp()">
+						<div id="menu-img"></div>
+					</a>
+				</ul>
+				<ul class="lang-menu">
+					<li class="menu-item"><a href="" active>LV</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="content">
+			<div class="video-element">
+				<img class="ripped-top" src="assets/img/ripped.png" alt="No photo found">
+				<video id="vid" poster="assets/img/Sparkle_Video.jpg">
+					<source src="assets/video/test.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<img id="play-btn" src="assets/img/icons/play_button.png" onclick="playVideo()">
+			</div>
+			<div class="about">
+				<p>SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm.</p>
+			</div>
+			<div class="photos-grid-container">
+				<img class="ripped-top" src="assets/img/ripped.png" alt="No photo found">
+				<div class="photos-grid-item" style="background-image: url('assets/img/Zanda_1.jpg');"></div>
+				<div class="photos-grid-item" style="background-image: url('assets/img/Sibilla_4.jpg');"></div>
+				<div>
+					<div class="photos-grid-item" style="background-image: url('assets/img/Brinuma_meita-15.jpg'); height: 50%;"></div>
+					<div class="photos-grid-item" style="background-image: url('assets/img/Alina_1.jpg'); height: 50%;"></div>
+				</div>
+				<div class="photos-grid-item" style="background-image: url('assets/img/Anda_2.jpg');">
+					<img src="assets/img/Anda_2.jpg" style="visibility: hidden; width: 100%;" />
+				</div>
+				<img class="ripped-bottom" src="assets/img/ripped.png" alt="No photo found" style="transform: rotate(-180deg);">
+			</div>
+			<div class="two-col-grid">
+				<div class="two-col-grid-item">
+					<p>VĒLIES PIEPILDĪT SAVU SAPNI?</p>
+					<button class="btn btn-regular">Sapņotājiem</button>
+				</div>
+				<div class="two-col-grid-item">
+					<p>VĒLIES PALĪDZĒT KĀDĀM PIEPILDĪT SAPNI?</p>
+					<button class="btn btn-regular">Uzņēmējiem</button>
+				</div>
+			</div>
+			<div class="contact-form">
+				<p class="form-title">SAZINĀTIES AR MUMS</p>
+				<form action="contact-form.php">
+					<div class="form-grid">
+						<input type="text" id="name" placeholder="Vārds, Uzvārds*">
+						<div></div>
+						<input type="text" id="email" placeholder="E-pasts*">
+					</div>
+					<input type="text" id="phone-number" placeholder="Telefons*">
+					<textarea id="text" placeholder="Jautājums, vai komentārs*"></textarea>
+					<p class="form-required">*obligāti aizpildāmie lauki</p>
+					<label class="rule-checkbox">Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.
+						<input type="checkbox">
+						<span class="checkmark"></span>					
+					</label>
+					<div>
+						<button class="btn btn-send" type="submit">Sūtīt</button>
+					</div>
+				</form>
+			</div>
+			<div class="supporters">
+				<img class="ripped-top" src="assets/img/ripped2.png" alt="No photo found">
+				<p class="supporters-title">ATBALSTĪTĀJI</p>
+				<div class="supporters-logo">
+					<img src="assets/img/teikums_logo.png" alt="No photo found">
+					<img src="assets/img/sem_logo.png" alt="No photo found">
+					<img src="assets/img/Citybee-logo.png" alt="No photo found">
+					<img src="assets/img/logo1.png" alt="No photo found">
+				</div>
+				
+			<img class="ripped-bottom" src="assets/img/ripped3.png" alt="No photo found">
+			</div>
+		</div>
+
+		<footer class="site-footer">
+ 			<div class="footer-grid">
+				<div class="footer-grid-item">
+					<img src="assets/img/GoldenV2Logo.png" alt="No photo found">
+				</div>
+				<div class="footer-grid-item footer-menu">
+					<a href="">Ideja</a>
+					<a href="">Piesaki Sapni</a>
+					<a href="">Uzņēmējiem</a>
+					<a href="">Sapņu banka</a>
+					<a href="">Sapņus atbalsta</a>
+					<a href="">Iedvesmas stāsti</a>
+				</div>
+				<div class="footer-grid-item footer-properties">
+					<h2>Biedrība SparkleHeart</h2>
+					<p>Reģistrācijas nr. 40008293119</p>
+					<p>Banka: SWEDBANK A/S</p>
+					<p>LV52HABA0551047652465</p>
+				</div>
+				<div class="footer-grid-item align-right footer-about">
+					<h2 class="about-name">Juris Gogulis</h2>
+					<p>juris.gogulis@sparkleheart.org</p>
+					<p>+37126890034</p>
+					<p>Biķernieku iela 24a - 5, LV-1006</p>
+					<a href="">Skatīt rekvizītus</a>
+					<div class="social-media">
+						<img src="assets/img/icons/facebook.png" alt="No photo found">
+						<img src="assets/img/icons/instagram.png" alt="No photo found">
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<span>&copy; SparkleHeart 2020. <br></span>
+				<span class="float-left">Visas tiesības aizsargātas.</span>
+				<span class="float-right">Privātuma politika</span>
+			</div>
+		</footer>
+	</body>
+</html>
